@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	@IBOutlet var nameTextField: UITextField!
+	@IBOutlet var passwordTextField: UITextField!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
@@ -21,6 +24,27 @@ class ViewController: UIViewController {
 	
 	@IBAction func showAlertPassword() {
 		showAlert(with: "Oops!", and: "Password is qwerty")
+	}
+	@IBAction func logIn() {
+		if nameTextField.text == "Lera" && passwordTextField.text == "qwerty"{
+			performSegue(withIdentifier: "tabBarControllerSegue", sender: nil)
+		} else {
+			showAlert(with: "😞", and: "Wrong name or password. Please try again")
+		}
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		let tabBarController = segue.destination as! UITabBarController
+		let homeVC = tabBarController.viewControllers?.first as! HomeVC
+		
+		homeVC.greetingLabelText = "Welkom, \(nameTextField.text!)"
+		
+		clearTextFields()
+	}
+	
+	func clearTextFields() {
+		nameTextField.text = ""
+		passwordTextField.text = ""
 	}
 }
 
