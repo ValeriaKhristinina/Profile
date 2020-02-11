@@ -252,17 +252,57 @@
             </objects>
             <point key="canvasLocation" x="2432" y="132"/>
         </scene>
-        <!--Photo-->
+        <!--Family Scheme-->
         <scene sceneID="GAH-2C-axh">
             <objects>
-                <viewController id="rVK-Rk-n8r" sceneMemberID="viewController">
+                <viewController title="Family Scheme" id="rVK-Rk-n8r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xNy-Af-Qek">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="oQc-GR-xSj">
+                                <rect key="frame" x="35.5" y="111" width="249" height="326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="119" translatesAutoresizingMaskIntoConstraints="NO" id="52x-oq-otD">
+                                        <rect key="frame" x="0.0" y="0.0" width="249" height="72"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👱🏼‍♂️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LQ-9r-cOU">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="72"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👩🏻‍🦰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eu-kJ-7sV">
+                                                <rect key="frame" x="184" y="0.0" width="65" height="72"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👦🏼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mB7-e3-Ymu">
+                                        <rect key="frame" x="92" y="127" width="65" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmU-RU-Nn0">
+                                        <rect key="frame" x="92" y="254" width="65" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.44048926230000002" green="0.71720319990000003" blue="0.78895026450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oQc-GR-xSj" firstAttribute="centerY" secondItem="xNy-Af-Qek" secondAttribute="centerY" id="86l-Nt-A6Z"/>
+                            <constraint firstItem="oQc-GR-xSj" firstAttribute="centerX" secondItem="xNy-Af-Qek" secondAttribute="centerX" id="iBD-m0-zBh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="S5N-gb-CbK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Photo" id="36t-4c-VYJ"/>
+                    <tabBarItem key="tabBarItem" title="Family Scheme" id="36t-4c-VYJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQF-2X-6T7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
