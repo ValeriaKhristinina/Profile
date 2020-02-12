@@ -16,7 +16,7 @@ class HomeVC: UIViewController {
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
-		greetingLabel.text = greetingLabelText
+		greetingLabel.text = "Welcom, \(greetingLabelText ?? "Noname")"
 
         // Do any additional setup after loading the view.
     }

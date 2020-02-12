@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 		let tabBarController = segue.destination as! UITabBarController
 		let homeVC = tabBarController.viewControllers?.first as! HomeVC
 		
-		homeVC.greetingLabelText = "Welkom, \(nameTextField.text!)"
+		homeVC.greetingLabelText = nameTextField.text
 		
 		clearTextFields()
 	}
